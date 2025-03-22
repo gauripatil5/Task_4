@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Time Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      width: 400px;
+      margin: 0;
+    }
+    .current-section {
+      margin-bottom: 20px;
+    }
+    .current-section-title {
+      font-size: 14px;
+      color:black;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .current-site {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background: #f5f5f5;
+      border-radius: 5px;
+    }
+    .current-favicon {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    #current-domain {
+      flex-grow: 1;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-right: 10px;
+    }
+    .current-timer {
+      font-size: 1.2em;
+      font-weight: bold;
+      flex-shrink: 0;
+      color: #4CAF50;
+    }
+    .tabs {
+      display: flex;
+      margin-bottom: 15px;
+      border-bottom: 1px solid #ddd;
+    }
+    .tab-btn {
+      padding: 8px 15px;
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .tab-btn.active {
+      border-bottom: 2px solid #4CAF50;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    #current-period {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .stats-container {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .site-stat {
+      display: flex;
+      align-items: center;
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    .favicon {
+      width: 16px;
+      height: 16px;
+      margin-right: 12px;
+      flex-shrink: 0;
+    }
+    .site-info {
+      flex-grow: 1;
+      min-width: 0;
+      margin-right: 12px;
+    }
+    .site-name {
+      display: block;
+      font-size: 14px;
+      color: #333;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .site-title {
+      display: block;
+      font-size: 12px;
+      color: #666;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .site-time {
+      color: #4CAF50;
+      font-weight: bold;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .loader {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+    .no-data {
+      text-align: center;
+      color: #666;
+      padding: 20px;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div class="current-section">
+    <div class="current-section-title">Currently Running:</div>
+    <div class="current-site">
+      <img id="current-favicon" class="current-favicon" src="" alt="">
+      <span id="current-domain"></span>
+      <span id="current-timer" class="current-timer">00:00:00</span>
+    </div>
+  </div>
+
+  <div class="tabs">
+    <button id="dailyTab" class="tab-btn active">Daily</button>
+    <button id="weeklyTab" class="tab-btn">Weekly</button>
+    <button id="monthlyTab" class="tab-btn">Monthly</button>
+  </div>
+
+  <div id="current-period"></div>
+  <div id="stats-container"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

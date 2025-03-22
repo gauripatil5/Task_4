@@ -1,0 +1,24 @@
+
+{
+    "manifest_version": 3,
+    "name": "Website Time Tracker",
+    "version": "1.0",
+    "description": "Track how much time you spend on each website daily, weekly, and monthly",
+    "permissions": ["storage", "tabs", "activeTab"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      }
+    },
+    "icons": {
+      "16": "images/icon-16.png",
+      "48": "images/icon-48.png",
+      "128": "images/icon-128.png"
+    }
+  }
