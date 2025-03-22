@@ -53,3 +53,8 @@ Analyze Data:
 Use the provided statistics to monitor and improve productivity.
 
 output:
+![Image](https://github.com/user-attachments/assets/b5b52dc7-3fee-42db-aba6-53e626e8dc1b)
+![Image](https://github.com/user-attachments/assets/070ba646-7d96-4fc8-82be-49ce4b829fe3)
+![Image](https://github.com/user-attachments/assets/1a973609-36b2-43bb-98ca-428caa56bc46)
+![Image](https://github.com/user-attachments/assets/95a203de-0046-4fa8-9f0c-ab07cc4ab814)
+![Image](https://github.com/user-attachments/assets/aa436a5f-0b76-4b4d-9180-d10bcf125d22)
