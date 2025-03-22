@@ -29,6 +29,7 @@ The manifest.json file defines the extension's metadata, permissions, and resour
 
 Features:
 Real-time tracking of active website usage.
+The website where u spend highest time will appear on top.
 Aggregated statistics for daily, weekly, and monthly periods.
 A visually appealing and responsive user interface.
 Persistent data storage using Chrome's local storage.
